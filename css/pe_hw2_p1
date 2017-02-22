@@ -1,0 +1,17 @@
+function setup() { 
+  createCanvas(400, 400);
+} 
+
+function draw() { 
+  background(220);
+
+  var ellipseH = 100;
+  var ellipseW = 100;
+  var ellipseX = mouseX;
+  var ellipseY = mouseY;
+
+  ellipse(ellipseX, ellipseY, ellipseW, ellipseH);
+  ellipse(ellipseX-20, ellipseY-10, 10, 10);
+  ellipse(ellipseX+20, ellipseY-10, 10, 10);
+arc(mouseX, mouseY+10, 50, 50, 0, PI, OPEN);
+}
